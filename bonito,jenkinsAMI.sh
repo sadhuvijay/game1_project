@@ -25,7 +25,7 @@ for instance_info in `cat $instanceID`
 do
 inst_ID=`echo $instance_info | awk -F":" '{print $1}'`
 inst_name=`echo $instance_info | awk -F":" '{print $2}'`
-echo "$inst_name-`date +%d-%m-%y --date '0 days ago'`" >> /tmp/amidel2.txt
+echo "$inst_name-`date +%d-%m-%y --date '1 days ago'`" >> /tmp/amidel2.txt
 done
 if [ -f /tmp/amidel2.txt ]
 then
